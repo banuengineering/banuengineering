@@ -1,0 +1,872 @@
+[
+  {
+    "id": 1,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.51 PM (1).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #1",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 2,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.51 PM (2).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #2",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 3,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.51 PM.jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #3",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 4,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.52 PM (1).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #4",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 5,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.52 PM.jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #5",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 6,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.53 PM (1).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #6",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 7,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.53 PM (2).jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #7",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 8,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.53 PM.jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #8",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 9,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.54 PM (1).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #9",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 10,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.54 PM (2).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #10",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 11,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.54 PM (3).jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #11",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 12,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.54 PM.jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #12",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 13,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.55 PM (1).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #13",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 14,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.55 PM (2).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #14",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 15,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.55 PM.jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #15",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 16,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.56 PM (1).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #16",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 17,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.56 PM (2).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #17",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 18,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.56 PM (3).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #18",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 19,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.56 PM.jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #19",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 20,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.57 PM (1).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #20",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 21,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.57 PM (2).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #21",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 22,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.57 PM (3).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #22",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 23,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.57 PM.jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #23",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 24,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.58 PM (1).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #24",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 25,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.58 PM (2).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #25",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 26,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.58 PM.jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #26",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 27,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.01.59 PM.jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #27",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 28,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.00 PM (1).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #28",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 29,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.00 PM (2).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #29",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 30,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.00 PM (3).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #30",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 31,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.00 PM.jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #31",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 32,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.01 PM (1).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #32",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 33,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.01 PM (2).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #33",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 34,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.01 PM.jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #34",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 35,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.02 PM (1).jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #35",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 36,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.02 PM (2).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #36",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 37,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.02 PM.jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #37",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 38,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.03 PM (1).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #38",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 39,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.03 PM (2).jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #39",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 40,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.03 PM.jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #40",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 41,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.04 PM (1).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #41",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 42,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.04 PM (2).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #42",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 43,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.04 PM.jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #43",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 44,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.05 PM (1).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #44",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 45,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.05 PM (2).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #45",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 46,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.05 PM (3).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #46",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 47,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.05 PM.jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #47",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 48,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.06 PM (1).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #48",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 49,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.06 PM (2).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #49",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 50,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.06 PM.jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #50",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 51,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.07 PM (1).jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #51",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 52,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.07 PM (2).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #52",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 53,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.07 PM.jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #53",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 54,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.08 PM (1).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #54",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 55,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.08 PM.jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #55",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 56,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.09 PM (1).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #56",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 57,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.09 PM (2).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #57",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 58,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.09 PM.jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #58",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 59,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.10 PM (1).jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #59",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 60,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.10 PM (2).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #60",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 61,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.10 PM.jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #61",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 62,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.11 PM (1).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #62",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 63,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.11 PM (2).jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #63",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 64,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.11 PM.jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #64",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 65,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.02.12 PM.jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #65",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 66,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.54.06 PM (1).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #66",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 67,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.54.06 PM (2).jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #67",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 68,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.54.06 PM.jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #68",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 69,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.54.07 PM (1).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #69",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 70,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.54.07 PM (2).jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #70",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 71,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.54.07 PM.jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #71",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 72,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.54.08 PM (1).jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #72",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 73,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.54.08 PM (2).jpeg",
+    "type": "image",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #73",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 74,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.54.08 PM.jpeg",
+    "type": "image",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #74",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 75,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.54.09 PM (1).jpeg",
+    "type": "image",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #75",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 76,
+    "src": "/pictures/WhatsApp Image 2026-08-25 at 4.54.09 PM.jpeg",
+    "type": "image",
+    "category": "Custom Works",
+    "title": "Custom Works Project #76",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 77,
+    "src": "/pictures/WhatsApp Video 2026-08-25 at 4.01.52 PM.mp4",
+    "type": "video",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #77",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 78,
+    "src": "/pictures/WhatsApp Video 2026-08-25 at 4.01.53 PM.mp4",
+    "type": "video",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #78",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 79,
+    "src": "/pictures/WhatsApp Video 2026-08-25 at 4.01.59 PM.mp4",
+    "type": "video",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #79",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 80,
+    "src": "/pictures/WhatsApp Video 2026-08-25 at 4.02.02 PM.mp4",
+    "type": "video",
+    "category": "Custom Works",
+    "title": "Custom Works Project #80",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 81,
+    "src": "/pictures/WhatsApp Video 2026-08-25 at 4.02.03 PM.mp4",
+    "type": "video",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #81",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 82,
+    "src": "/pictures/WhatsApp Video 2026-08-25 at 4.02.08 PM.mp4",
+    "type": "video",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #82",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 83,
+    "src": "/pictures/WhatsApp Video 2026-08-25 at 4.02.09 PM.mp4",
+    "type": "video",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #83",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  },
+  {
+    "id": 84,
+    "src": "/pictures/WhatsApp Video 2026-08-25 at 4.02.11 PM.mp4",
+    "type": "video",
+    "category": "Custom Works",
+    "title": "Custom Works Project #84",
+    "desc": "High-precision custom fabrication and installation of custom works elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-6"
+  },
+  {
+    "id": 85,
+    "src": "/pictures/WhatsApp Video 2026-08-25 at 4.02.12 PM.mp4",
+    "type": "video",
+    "category": "Stainless Steel",
+    "title": "Stainless Steel Project #85",
+    "desc": "High-precision custom fabrication and installation of stainless steel elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-4"
+  },
+  {
+    "id": 86,
+    "src": "/pictures/WhatsApp Video 2026-08-25 at 4.54.07 PM.mp4",
+    "type": "video",
+    "category": "Toughened Glass",
+    "title": "Toughened Glass Project #86",
+    "desc": "High-precision custom fabrication and installation of toughened glass elements, showing weld integrity and structural stability.",
+    "location": "Madurai, Tamil Nadu",
+    "layout": "col-8"
+  },
+  {
+    "id": 87,
+    "src": "/pictures/WhatsApp Video 2026-08-25 at 4.54.08 PM.mp4",
+    "type": "video",
+    "category": "ACP Elevation",
+    "title": "ACP Elevation Project #87",
+    "desc": "High-precision custom fabrication and installation of acp elevation elements, showing weld integrity and structural stability.",
+    "location": "Trichy, Tamil Nadu",
+    "layout": "col-12"
+  }
+]
