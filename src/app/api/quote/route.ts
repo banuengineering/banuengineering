@@ -31,18 +31,35 @@ async function sendEdgeSmtpEmail({
   const encoder = new TextEncoder();
   const decoder = new TextDecoder();
 
-  async function readLine() {
-    const { value } = await reader.read();
-    return value ? decoder.decode(value) : "";
+  let buffer = "";
+
+  async function readSmtpResponse(): Promise<string> {
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+
+      const lines = buffer.split("\r\n");
+      buffer = lines.pop() || "";
+
+      for (const line of lines) {
+        if (!line) continue;
+        // SMTP completion line pattern: 3 digits followed by space (e.g. "250 ", "235 ", "334 ")
+        if (/^\d{3} /.test(line)) {
+          return line;
+        }
+      }
+    }
+    return buffer;
   }
 
-  async function sendCmd(cmd: string) {
+  async function sendCmd(cmd: string): Promise<string> {
     await writer.write(encoder.encode(cmd + "\r\n"));
-    return await readLine();
+    return await readSmtpResponse();
   }
 
   // 1. Read initial 220 banner
-  await readLine();
+  await readSmtpResponse();
 
   // 2. EHLO handshake
   await sendCmd(`EHLO ${host}`);
@@ -50,7 +67,7 @@ async function sendEdgeSmtpEmail({
   // 3. Base64 AUTH LOGIN
   await sendCmd("AUTH LOGIN");
   await sendCmd(btoa(user));
-  await sendCmd(btoa(pass.replace(/\s+/g, ""))); // Clean app password spaces
+  await sendCmd(btoa(pass.replace(/\s+/g, "")));
 
   // 4. Envelope setup
   await sendCmd(`MAIL FROM:<${user}>`);
@@ -77,7 +94,7 @@ async function sendEdgeSmtpEmail({
     writer.releaseLock();
     reader.releaseLock();
     socket.close();
-  } catch (e) { }
+  } catch (e) {}
 
   return res;
 }
