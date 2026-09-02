@@ -269,6 +269,52 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* SECTION 3 — SERVICE CITIES & GEOGRAPHICAL COVERAGE */}
+      <section className="section-padding container" style={{ borderTop: '1px solid var(--border-color)', paddingBottom: '8rem' }} aria-label="Geographical Coverage">
+        <motion.div
+          variants={scrollReveal}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          <span className="eyebrow" style={{ color: 'var(--accent-brand)' }}>10+ Cities Across Tamil Nadu</span>
+          <h2 className="heading-display" style={{ fontSize: '2.75rem', marginBottom: '1rem' }}>
+            Regional Execution Footprint
+          </h2>
+          <p style={{ color: 'var(--text-secondary)', maxWidth: '620px', lineHeight: '1.7', marginBottom: '3rem' }}>
+            Headquartered in Trichy, Banu Engineering deploys mobile fabrication teams and certified master welders across major commercial and residential hubs in Tamil Nadu.
+          </p>
+
+          <div className="brand-specs-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem' }}>
+            {[
+              { city: "Trichy", note: "Headquarters & Fabrication Yard" },
+              { city: "Pudukkottai", note: "Industrial & Commercial Projects" },
+              { city: "Tanjore", note: "Residential & Heritage Works" },
+              { city: "Kumbakonam", note: "Architectural Railings & Facades" },
+              { city: "Ramanathapuram", note: "Coastal SS 316 Installations" },
+              { city: "Madurai", note: "Commercial Showroom ACP" },
+              { city: "Chennai", note: "High-Rise Glass & Spider Glazing" },
+              { city: "Dindigul", note: "Residential & Gate Engineering" },
+              { city: "Theni", note: "Structural Sheds & Fabrications" },
+              { city: "All Tamil Nadu", note: "On-Site Execution Support" }
+            ].map((item) => (
+              <div 
+                key={item.city} 
+                className="brand-glass-card" 
+                style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+              >
+                <span style={{ fontSize: '1.15rem', fontWeight: '800', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>
+                  📍 {item.city}
+                </span>
+                <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                  {item.note}
+                </span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
     </div>
   );
 }

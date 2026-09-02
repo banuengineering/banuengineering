@@ -200,11 +200,30 @@ export default function QuoteForm() {
             onChange={handleChange}
             className="form-select"
           >
-            <option value="Stainless Steel Works">Stainless Steel Works</option>
-            <option value="Toughened Glass Works">Toughened Glass Works</option>
-            <option value="ACP Elevation">ACP Elevation Cladding</option>
-            <option value="Combined Work">Combined Steel + Glass + ACP</option>
-            <option value="Other">Other (Specify below)</option>
+            <optgroup label="Stainless Steel Systems">
+              <option value="Stainless Steel Handrails (Staircase & Balcony)">Stainless Steel Handrails (Staircase & Balcony)</option>
+              <option value="SS & MS Spiral Steps">SS & MS Spiral Steps</option>
+              <option value="Stainless Steel & Glass Staircases">Stainless Steel & Glass Staircases</option>
+              <option value="SS Safety Gates & Compound Gates (HPL with CNC)">SS Safety Gates & Compound Gates (HPL with CNC)</option>
+            </optgroup>
+            <optgroup label="Toughened Glass Works">
+              <option value="Toughen Glass Railings with Design">Toughened Glass Railings with Design</option>
+              <option value="Spider Glass works">Spider Glass Works</option>
+              <option value="Glass Canopies">Glass Canopies</option>
+              <option value="Shower Enclosures">Shower Enclosures</option>
+              <option value="Terracotta Jally with Tough glass">Terracotta Jally with Toughened Glass</option>
+            </optgroup>
+            <optgroup label="Facades & Structural Sheds">
+              <option value="ACP Elevation">ACP Elevation Cladding</option>
+              <option value="Roofing Shed (JSW Metal, UPVC, Polycarbonate)">Roofing Shed (JSW Metal, UPVC, Polycarbonate)</option>
+            </optgroup>
+            <optgroup label="Interior & Custom Works">
+              <option value="Modular Kitchen">Modular Kitchen</option>
+              <option value="Lopt & Cupboard works">Loft & Cupboard Works</option>
+              <option value="Custom SS & Glass Works">Custom SS & Glass Works</option>
+              <option value="Combined Work">Combined Steel + Glass + ACP</option>
+              <option value="Other">Other (Specify below)</option>
+            </optgroup>
           </select>
         </div>
 

@@ -12,31 +12,146 @@ export default function ProjectsPage() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [activeService, setActiveService] = useState(0);
 
-  const categories = ["All", "Stainless Steel", "Toughened Glass", "ACP Elevation", "Custom Works"];
+  const categories = ["All", "Stainless Steel", "Toughened Glass", "ACP Elevation", "Structural Sheds", "Interior & Modular", "Custom Works"];
+
+  const servicesCatalog = [
+    {
+      id: "01",
+      title: "Stainless Steel Handrails (Staircase & Balcony)",
+      category: "Stainless Steel",
+      desc: "SS 304 & 316 grade handrails designed for staircase safety and balcony elegance. Available in mirror, matte, and hairline finishes.",
+      image: "/images/steel-staircase.png",
+      tags: ["SS 304/316", "Jindal Grade", "Mirror / Hairline Finish"]
+    },
+    {
+      id: "02",
+      title: "SS & MS Spiral Steps",
+      category: "Stainless Steel",
+      desc: "Space-saving circular staircase structures engineered with heavy MS or SS frameworks and anti-skid safety treads.",
+      image: "/images/steel-staircase.png",
+      tags: ["Spiral Architecture", "SS & MS Treads", "Space Saver"]
+    },
+    {
+      id: "03",
+      title: "Toughened Glass Railings with Design",
+      category: "Toughened Glass",
+      desc: "12mm–19mm Saint-Gobain toughened glass railing systems featuring custom etched designs and concealed base shoe channels.",
+      image: "/images/glass-railing.png",
+      tags: ["Saint-Gobain Glass", "Custom Etched Design", "Ozzon Hardware"]
+    },
+    {
+      id: "04",
+      title: "Stainless Steel & Glass Staircases",
+      category: "Stainless Steel",
+      desc: "Modern floating and stringer staircases combining heavy SS load-bearing frames with structural toughened glass steps.",
+      image: "/images/steel-staircase.png",
+      tags: ["Hybrid Construction", "Glass Treads", "Heavy Duty"]
+    },
+    {
+      id: "05",
+      title: "Spider Glass Works",
+      category: "Toughened Glass",
+      desc: "Frameless commercial curtain walls and entrance facades using SS 316 Ozzon spider fittings and point-fixed bolts.",
+      image: "/images/glass-railing.png",
+      tags: ["Frameless Facades", "SS 316 Spiders", "Ozzon Fittings"]
+    },
+    {
+      id: "06",
+      title: "Glass Canopies",
+      category: "Toughened Glass",
+      desc: "Weather-resistant entrance canopy structures with laminated toughened glass panels supported by heavy SS tie-rod tension bars.",
+      image: "/images/glass-railing.png",
+      tags: ["Overhead Protection", "Laminated Glass", "SS Tie-Rods"]
+    },
+    {
+      id: "07",
+      title: "Shower Enclosures",
+      category: "Toughened Glass",
+      desc: "Custom frameless glass shower cubicles, sliding glass partitions, and magnetic seal doors with rust-free brass fittings.",
+      image: "/images/glass-railing.png",
+      tags: ["Frameless Glass", "Water-Tight Seals", "Luxury Bathrooms"]
+    },
+    {
+      id: "08",
+      title: "SS Safety Gates & Compound Gates (HPL with CNC)",
+      category: "Stainless Steel",
+      desc: "Architectural main compound gates combining heavy SS 304 frames with precision CNC laser-cut High-Pressure Laminate (HPL) panels.",
+      image: "/images/welding-craft.png",
+      tags: ["HPL Sheet Inserts", "CNC Laser Cut", "Rust Guarantee"]
+    },
+    {
+      id: "09",
+      title: "Terracotta Jally with Toughened Glass",
+      category: "Toughened Glass",
+      desc: "Traditional earthy terracotta jally screens backed with thermal toughened glass for natural ventilation, cooling, and weather protection.",
+      image: "/images/glass-railing.png",
+      tags: ["Terracotta Clay Jally", "Eco Elevation", "Rain Proofing"]
+    },
+    {
+      id: "10",
+      title: "Roofing Shed (JSW Metal, UPVC, Polycarbonate)",
+      category: "Structural Sheds",
+      desc: "Industrial and residential roofing sheds built with JSW color-coated steel sheets, multi-wall polycarbonate, or insulated UPVC panels.",
+      image: "/images/acp-elevation.png",
+      tags: ["JSW Metal Sheets", "UPVC & Polycarbonate", "Residential & Commercial"]
+    },
+    {
+      id: "11",
+      title: "ACP Elevation Cladding",
+      category: "ACP Elevation",
+      desc: "Aluminum Composite Panel (ACP) exterior cladding for commercial showroom facades, corporate towers, and modern building elevations.",
+      image: "/images/acp-elevation.png",
+      tags: ["Commercial Elevation", "PVDF Coating", "Weatherproof"]
+    },
+    {
+      id: "12",
+      title: "Modular Kitchen Frameworks",
+      category: "Interior & Modular",
+      desc: "Stainless steel 304 termite-proof modular kitchen frameworks, heavy-duty wire basket supports, and metal storage cabinets.",
+      image: "/images/welding-craft.png",
+      tags: ["SS 304 Framework", "Termite Proof", "Custom Drawers"]
+    },
+    {
+      id: "13",
+      title: "Loft & Cupboard Works",
+      category: "Interior & Modular",
+      desc: "Custom overhead metal loft structures, stainless steel storage cupboards, aluminum wardrobe partitioning, and utility shelving.",
+      image: "/images/welding-craft.png",
+      tags: ["Loft Framing", "Metal Storage", "Utility Shelving"]
+    },
+    {
+      id: "14",
+      title: "Custom SS & Glass Works",
+      category: "Custom Works",
+      desc: "Tailor-made architectural metal & glass features, custom display structures, metal wall grilles, and specialized engineering items.",
+      image: "/images/welding-craft.png",
+      tags: ["Bespoke Fabrication", "Custom Engineering", "Architectural Metal"]
+    }
+  ];
 
   const servicesIndex = [
     {
       num: "01",
-      title: "STAINLESS STEEL",
-      tags: ["Staircases", "Handrails", "Gates", "Spiral Steps"],
+      title: "STAINLESS STEEL SYSTEMS",
+      tags: ["Handrails", "Spiral Steps", "Safety Gates (HPL CNC)", "SS Staircases"],
       image: "/images/steel-staircase.png"
     },
     {
       num: "02",
-      title: "TOUGHENED GLASS",
-      tags: ["Balconies", "Spider Glass", "Canopies", "Enclosures"],
+      title: "TOUGHENED GLASS WORKS",
+      tags: ["Glass Railings", "Spider Glass", "Canopies", "Shower Cubicles", "Terracotta Jally"],
       image: "/images/glass-railing.png"
     },
     {
       num: "03",
-      title: "ACP ELEVATION",
-      tags: ["Cladding", "Showrooms", "Seams & Expansion Joints"],
+      title: "FACADES & ROOFING SHEDS",
+      tags: ["ACP Elevation", "JSW Roofing Sheds", "UPVC", "Polycarbonate Sheets"],
       image: "/images/acp-elevation.png"
     },
     {
       num: "04",
-      title: "CUSTOM WORKS",
-      tags: ["Roofing Sheds", "Modular Frames", "Structural Fabrication"],
+      title: "INTERIOR & CUSTOM WORKS",
+      tags: ["Modular Kitchen", "Loft & Cupboard Works", "Custom Fabrication"],
       image: "/images/welding-craft.png"
     }
   ];
@@ -136,6 +251,73 @@ export default function ProjectsPage() {
               height={520}
             />
           </div>
+        </div>
+      </section>
+
+      {/* ALL 14 SERVICES CATALOG GRID */}
+      <section className="section-padding container" style={{ borderBottom: '1px solid var(--border-color)', marginBottom: '4rem' }} aria-label="Complete List of Services">
+        <motion.div
+          variants={scrollReveal}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          <span className="eyebrow" style={{ color: 'var(--accent-brand)' }}>Complete Capability Matrix</span>
+          <h2 className="heading-display" style={{ fontSize: '2.75rem', marginBottom: '1rem' }}>
+            All 14 Fabrication & Architectural Services
+          </h2>
+          <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', maxWidth: '620px', lineHeight: '1.7', marginBottom: '3rem' }}>
+            From high-grade SS 304/316 handrails and Saint-Gobain toughened glass facades to JSW roofing sheds and HPL CNC compound gates—explore our full spectrum of specialized fabrication services.
+          </p>
+        </motion.div>
+
+        <div className="brand-specs-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '2rem' }}>
+          {servicesCatalog.map((item) => (
+            <motion.div 
+              key={item.id} 
+              className="brand-glass-card"
+              whileHover={{ y: -6 }}
+              transition={{ duration: 0.3 }}
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
+            >
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+                  <span className="cert-hero-badge" style={{ fontSize: '0.75rem', letterSpacing: '0.1em' }}>
+                    SERVICE #{item.id}
+                  </span>
+                  <span className="cert-meta-pill" style={{ margin: 0, fontSize: '0.75rem' }}>
+                    {item.category}
+                  </span>
+                </div>
+
+                <h3 className="brand-card-title" style={{ fontSize: '1.25rem', lineHeight: '1.35', marginBottom: '0.75rem' }}>
+                  {item.title}
+                </h3>
+
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '1.25rem' }}>
+                  {item.desc}
+                </p>
+
+                <div className="brand-specs-list" style={{ marginBottom: '1.5rem' }}>
+                  {item.tags.map((tag) => (
+                    <span key={tag} className="brand-spec-item" style={{ fontSize: '0.8rem' }}>
+                      ✦ {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <Link 
+                  href={`/contact?service=${encodeURIComponent(item.title)}`}
+                  className="btn-primary" 
+                  style={{ display: 'block', textAlign: 'center', width: '100%', padding: '0.8rem 1rem', fontSize: '0.85rem' }}
+                >
+                  Request Quote for This Service →
+                </Link>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </section>
 
