@@ -96,9 +96,9 @@ export async function POST(request: Request) {
     }
 
     const selectedServiceLabel = service;
-    const smtpUser = process.env.SMTP_USER;
-    const smtpPass = process.env.SMTP_PASSWORD;
-    const recipientEmail = process.env.SMTP_TO;
+    const smtpUser = process.env.SMTP_USER || "";
+    const smtpPass = process.env.SMTP_PASSWORD || "";
+    const recipientEmail = process.env.SMTP_TO || "banuengineeringtrichy@gmail.com";
 
     // Construct email HTML
     const emailHtml = `
@@ -148,21 +148,23 @@ export async function POST(request: Request) {
     `;
 
     // 1. Direct Edge Sockets Gmail SMTP (Primary Handler)
-    try {
-      await sendEdgeSmtpEmail({
-        host: "smtp.gmail.com",
-        port: 465,
-        user: smtpUser,
-        pass: smtpPass,
-        from: `Banu Engineering Website <${smtpUser}>`,
-        to: recipientEmail,
-        subject: `[New Website Quote] ${selectedServiceLabel} - ${name}`,
-        html: emailHtml,
-      });
+    if (smtpUser && smtpPass) {
+      try {
+        await sendEdgeSmtpEmail({
+          host: process.env.SMTP_HOST || "smtp.gmail.com",
+          port: parseInt(process.env.SMTP_PORT || "465", 10),
+          user: smtpUser,
+          pass: smtpPass,
+          from: process.env.SMTP_FROM || `Banu Engineering Website <${smtpUser}>`,
+          to: recipientEmail,
+          subject: `[New Website Quote] ${selectedServiceLabel} - ${name}`,
+          html: emailHtml,
+        });
 
-      return NextResponse.json({ success: true, method: "gmail_smtp_edge" });
-    } catch (edgeError) {
-      console.warn("Edge Sockets SMTP direct send failed, using HTTP backup:", edgeError);
+        return NextResponse.json({ success: true, method: "gmail_smtp_edge" });
+      } catch (edgeError) {
+        console.warn("Edge Sockets SMTP direct send failed, using HTTP backup:", edgeError);
+      }
     }
 
     // 2. HTTP Relay Backup (FormSubmit)
