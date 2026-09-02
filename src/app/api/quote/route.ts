@@ -77,7 +77,7 @@ async function sendEdgeSmtpEmail({
     writer.releaseLock();
     reader.releaseLock();
     socket.close();
-  } catch (e) {}
+  } catch (e) { }
 
   return res;
 }
@@ -96,9 +96,9 @@ export async function POST(request: Request) {
     }
 
     const selectedServiceLabel = service;
-    const smtpUser = process.env.SMTP_USER || "banuengineeringtrichy@gmail.com";
-    const smtpPass = process.env.SMTP_PASSWORD || "hqzydbgqlweryhnx";
-    const recipientEmail = process.env.SMTP_TO || "banuengineeringtrichy@gmail.com";
+    const smtpUser = process.env.SMTP_USER;
+    const smtpPass = process.env.SMTP_PASSWORD;
+    const recipientEmail = process.env.SMTP_TO;
 
     // Construct email HTML
     const emailHtml = `
