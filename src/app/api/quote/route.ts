@@ -96,8 +96,8 @@ export async function POST(request: Request) {
     }
 
     const selectedServiceLabel = service;
-    const smtpUser = process.env.SMTP_USER || "";
-    const smtpPass = process.env.SMTP_PASSWORD || "";
+    const smtpUser = process.env.SMTP_USER || "banuengineeringtrichy@gmail.com";
+    const smtpPass = process.env.SMTP_PASSWORD || "hqzydbgqlweryhnx";
     const recipientEmail = process.env.SMTP_TO || "banuengineeringtrichy@gmail.com";
 
     // Construct email HTML
@@ -148,23 +148,23 @@ export async function POST(request: Request) {
     `;
 
     // 1. Direct Edge Sockets Gmail SMTP (Primary Handler)
-    if (smtpUser && smtpPass) {
-      try {
-        await sendEdgeSmtpEmail({
-          host: process.env.SMTP_HOST || "smtp.gmail.com",
-          port: parseInt(process.env.SMTP_PORT || "465", 10),
-          user: smtpUser,
-          pass: smtpPass,
-          from: process.env.SMTP_FROM || `Banu Engineering Website <${smtpUser}>`,
-          to: recipientEmail,
-          subject: `[New Website Quote] ${selectedServiceLabel} - ${name}`,
-          html: emailHtml,
-        });
+    let smtpErrorDetails = "";
+    try {
+      await sendEdgeSmtpEmail({
+        host: process.env.SMTP_HOST || "smtp.gmail.com",
+        port: parseInt(process.env.SMTP_PORT || "465", 10),
+        user: smtpUser,
+        pass: smtpPass,
+        from: process.env.SMTP_FROM || `Banu Engineering Website <${smtpUser}>`,
+        to: recipientEmail,
+        subject: `[New Website Quote] ${selectedServiceLabel} - ${name}`,
+        html: emailHtml,
+      });
 
-        return NextResponse.json({ success: true, method: "gmail_smtp_edge" });
-      } catch (edgeError) {
-        console.warn("Edge Sockets SMTP direct send failed, using HTTP backup:", edgeError);
-      }
+      return NextResponse.json({ success: true, method: "gmail_smtp_edge" });
+    } catch (edgeError: any) {
+      smtpErrorDetails = edgeError?.message || String(edgeError);
+      console.warn("Edge Sockets SMTP direct send failed, trying HTTP backup:", smtpErrorDetails);
     }
 
     // 2. HTTP Relay Backup (FormSubmit)
@@ -193,14 +193,15 @@ export async function POST(request: Request) {
       if (formSubmitRes.ok) {
         return NextResponse.json({ success: true, method: "formsubmit_backup" });
       }
-    } catch (e) {
+    } catch (e: any) {
       console.warn("HTTP backup failed:", e);
     }
 
-    return NextResponse.json({
-      success: true,
-      message: "Quote request received successfully. Our team will contact you shortly.",
-    });
+    // If both fail, return an error status so the issue is surfaced instead of hidden
+    return NextResponse.json(
+      { error: `Email dispatch failed. SMTP error: ${smtpErrorDetails || "Connection refused"}` },
+      { status: 500 }
+    );
 
   } catch (error: any) {
     console.error("Quote API Error:", error);
