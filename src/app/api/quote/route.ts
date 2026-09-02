@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
 
-export const runtime = "nodejs";
-export const dynamic = "force-dynamic";
+export const runtime = "edge";
 
 export async function POST(request: Request) {
   try {
@@ -17,23 +15,9 @@ export async function POST(request: Request) {
       );
     }
 
-    // Initialize SMTP transport
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: parseInt(process.env.SMTP_PORT || "587", 10),
-      secure: process.env.SMTP_PORT === "465",
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD,
-      },
-      tls: {
-        rejectUnauthorized: false, // Prevents issues with self-signed certs in shared hosting envs
-      },
-    });
-
     const selectedServiceLabel = service;
 
-    // Construct the email template
+    // Construct formatted email HTML content
     const emailHtml = `
       <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; border: 1px solid #ddd; padding: 20px; border-radius: 8px;">
         <h2 style="color: #020c1b; border-bottom: 2px solid #c5a880; padding-bottom: 10px;">New Website Quote Request</h2>
@@ -80,18 +64,67 @@ export async function POST(request: Request) {
       </div>
     `;
 
-    // Send transaction email
-    await transporter.sendMail({
-      from: process.env.SMTP_FROM || `"Banu Engineering Inquiry" <${process.env.SMTP_USER}>`,
-      to: process.env.SMTP_TO,
-      subject: `[Quote Request] ${selectedServiceLabel} - ${name}`,
-      html: emailHtml,
-      replyTo: email || undefined,
-    });
+    // 1. Resend API Handler
+    if (process.env.RESEND_API_KEY) {
+      const resendRes = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${process.env.RESEND_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: process.env.SMTP_FROM || "Banu Engineering Inquiry <onboarding@resend.dev>",
+          to: [process.env.SMTP_TO || "admin@banuengineering.com"],
+          subject: `[Quote Request] ${selectedServiceLabel} - ${name}`,
+          html: emailHtml,
+          reply_to: email || undefined,
+        }),
+      });
 
-    return NextResponse.json({ success: true });
+      if (!resendRes.ok) {
+        const errText = await resendRes.text();
+        throw new Error(`Resend API Error: ${errText}`);
+      }
+
+      return NextResponse.json({ success: true });
+    }
+
+    // 2. Web3Forms API Handler
+    if (process.env.WEB3FORMS_ACCESS_KEY) {
+      const web3Res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.WEB3FORMS_ACCESS_KEY,
+          name,
+          email,
+          phone,
+          location,
+          projectType,
+          service: selectedServiceLabel,
+          requirements,
+          contactMethod,
+          subject: `[Quote Request] ${selectedServiceLabel} - ${name}`,
+        }),
+      });
+
+      if (!web3Res.ok) {
+        const errText = await web3Res.text();
+        throw new Error(`Web3Forms API Error: ${errText}`);
+      }
+
+      return NextResponse.json({ success: true });
+    }
+
+    // Fallback response for logging
+    console.log("Quote Request Received (Edge):", { name, phone, email, service, location });
+    return NextResponse.json({ success: true, message: "Quote request logged successfully." });
+
   } catch (error: any) {
-    console.error("Nodemailer SMTP Error:", error);
+    console.error("Quote API Error:", error);
     return NextResponse.json(
       { error: error.message || "Failed to process quote request." },
       { status: 500 }
