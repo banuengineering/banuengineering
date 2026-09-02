@@ -6,6 +6,11 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Banu Engineering | Stainless Steel, Toughened Glass & ACP Works Trichy",
   description: "Banu Engineering (Est. 2015) specializes in architectural Stainless Steel staircases, Toughened Glass railings, and ACP elevations across Tamil Nadu. Led by NTD-IBR qualified welders.",
+  icons: {
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
   keywords: [
     "Stainless steel works Trichy",
     "Glass works Trichy",
