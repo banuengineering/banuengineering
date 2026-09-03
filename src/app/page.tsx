@@ -386,7 +386,7 @@ export default function Home() {
               </div>
               <div className="portfolio-meta-row">
                 <span className="portfolio-title-text">{work.title}</span>
-                <span className="portfolio-loc-text">{work.location}</span>
+                {/* <span className="portfolio-loc-text">{work.location}</span> */}
               </div>
               <p className="portfolio-desc-text">{work.desc}</p>
             </motion.div>

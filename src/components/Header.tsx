@@ -71,31 +71,34 @@ export default function Header() {
 
           {/* Desktop navigation */}
           <nav className="desktop-nav" aria-label="Main Navigation">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={`nav-link ${isLinkActive(link.href) ? 'active-link' : ''}`}
-              >
-                {link.name}
-              </Link>
-            ))}
+            {/* 1. Home */}
+            <Link
+              href="/"
+              className={`nav-link ${isLinkActive('/') ? 'active-link' : ''}`}
+            >
+              Home
+            </Link>
 
-            {/* Mega Services Dropdown (All 14 Services) */}
+            {/* 2. Services (Clickable Link + Mega Dropdown on Hover) */}
             <div
               className={`dropdown-wrapper ${isDropdownClosed ? 'is-closed' : ''}`}
               onMouseEnter={() => setIsDropdownClosed(false)}
               onMouseLeave={() => setIsDropdownClosed(false)}
               tabIndex={0}
-              role="button"
-              aria-haspopup="true"
+              role="region"
+              aria-label="Services Menu"
             >
-              <span className={`nav-link ${pathname.startsWith('/services') || pathname.startsWith('/projects') ? 'active-link' : ''}`} style={{ cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+              <Link
+                href="/services"
+                className={`nav-link ${pathname.startsWith('/services') ? 'active-link' : ''}`}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}
+                onClick={handleDropdownLinkClick}
+              >
                 Services
                 <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor">
                   <path d="M7 10l5 5 5-5H7z" />
                 </svg>
-              </span>
+              </Link>
 
               <div className="mega-dropdown-menu">
                 <div className="mega-dropdown-grid">
@@ -166,18 +169,37 @@ export default function Header() {
                 </div>
 
                 <div className="mega-dropdown-footer">
-                  <Link href="/projects" className="mega-footer-link" onClick={handleDropdownLinkClick}>
+                  <Link href="/services" className="mega-footer-link" onClick={handleDropdownLinkClick}>
                     Explore All 14 Services & Capability Matrix →
                   </Link>
                 </div>
               </div>
             </div>
-          </nav>
 
-          {/* Right side quote CTA link */}
-          <Link href="/contact?quote=true" className="nav-cta-link">
-            Request a Quote
-          </Link>
+            {/* 3. Projects */}
+            <Link
+              href="/projects"
+              className={`nav-link ${isLinkActive('/projects') ? 'active-link' : ''}`}
+            >
+              Projects
+            </Link>
+
+            {/* 4. About */}
+            <Link
+              href="/about"
+              className={`nav-link ${isLinkActive('/about') ? 'active-link' : ''}`}
+            >
+              About
+            </Link>
+
+            {/* 5. Contact */}
+            <Link
+              href="/contact"
+              className={`nav-link ${isLinkActive('/contact') ? 'active-link' : ''}`}
+            >
+              Contact
+            </Link>
+          </nav>
 
           {/* Mobile toggle */}
           <button
@@ -196,37 +218,37 @@ export default function Header() {
       {/* Mobile Menu Drawer */}
       <div className={`mobile-drawer ${isOpen ? 'open' : ''}`}>
         <nav className="mobile-nav" aria-label="Mobile Navigation">
+          {/* 1. Home */}
           <Link href="/" className={`mobile-nav-link ${isLinkActive('/') ? 'active-link' : ''}`} onClick={() => setIsOpen(false)}>Home</Link>
 
-          {/* Mobile Accordion Toggle for All 14 Services */}
+          {/* 2. Services (Accordion + Direct Link) */}
           <div style={{ width: '100%', borderBottom: '1px solid rgba(255, 255, 255, 0.08)', paddingBottom: '0.5rem' }}>
-            <button
-              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-              className="mobile-nav-link"
-              style={{
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                background: 'none',
-                border: 'none',
-                color: 'var(--text-primary)',
-                padding: '0.75rem 0',
-                cursor: 'pointer',
-                textAlign: 'left'
-              }}
-            >
-              <span>Services</span>
-              <svg
-                viewBox="0 0 24 24"
-                width="16"
-                height="16"
-                fill="currentColor"
-                style={{ transform: mobileServicesOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+              <Link href="/services" className={`mobile-nav-link ${isLinkActive('/services') ? 'active-link' : ''}`} style={{ border: 'none', flex: 1 }} onClick={() => setIsOpen(false)}>
+                Services
+              </Link>
+              <button
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--text-primary)',
+                  padding: '0.75rem',
+                  cursor: 'pointer'
+                }}
+                aria-label="Toggle Services Category Cards"
               >
-                <path d="M7 10l5 5 5-5H7z" />
-              </svg>
-            </button>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  style={{ transform: mobileServicesOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}
+                >
+                  <path d="M7 10l5 5 5-5H7z" />
+                </svg>
+              </button>
+            </div>
 
             {mobileServicesOpen && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '0.5rem', marginBottom: '0.5rem' }}>
@@ -273,22 +295,21 @@ export default function Header() {
                   </p>
                 </Link>
 
-                <Link href="/projects" className="mobile-nav-link" style={{ fontSize: '0.85rem', color: 'var(--accent-brand)', fontWeight: '700', textAlign: 'center', padding: '0.5rem 0', textTransform: 'none' }} onClick={() => setIsOpen(false)}>
+                <Link href="/services" className="mobile-nav-link" style={{ fontSize: '0.85rem', color: 'var(--accent-brand)', fontWeight: '700', textAlign: 'center', padding: '0.5rem 0', textTransform: 'none' }} onClick={() => setIsOpen(false)}>
                   Explore All 14 Services Matrix →
                 </Link>
               </div>
             )}
           </div>
 
+          {/* 3. Projects */}
           <Link href="/projects" className={`mobile-nav-link ${isLinkActive('/projects') ? 'active-link' : ''}`} onClick={() => setIsOpen(false)}>Projects</Link>
-          <Link href="/about" className={`mobile-nav-link ${isLinkActive('/about') ? 'active-link' : ''}`} onClick={() => setIsOpen(false)}>About Us</Link>
-          <Link href="/contact" className={`mobile-nav-link ${isLinkActive('/contact') ? 'active-link' : ''}`} onClick={() => setIsOpen(false)}>Contact</Link>
 
-          <div className="mobile-drawer-cta">
-            <Link href="/contact?quote=true" className="btn-primary" style={{ width: '100%', textAlign: 'center' }} onClick={() => setIsOpen(false)}>
-              Request Quotation
-            </Link>
-          </div>
+          {/* 4. About */}
+          <Link href="/about" className={`mobile-nav-link ${isLinkActive('/about') ? 'active-link' : ''}`} onClick={() => setIsOpen(false)}>About</Link>
+
+          {/* 5. Contact */}
+          <Link href="/contact" className={`mobile-nav-link ${isLinkActive('/contact') ? 'active-link' : ''}`} onClick={() => setIsOpen(false)}>Contact</Link>
         </nav>
       </div>
     </>

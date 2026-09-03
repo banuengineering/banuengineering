@@ -3683,9 +3683,10 @@ select {
 .mega-dropdown-menu {
   position: absolute;
   top: 100%;
-  right: -80px;
-  width: min(740px, calc(100vw - 2rem));
-  max-width: calc(100vw - 2rem);
+  right: -120px;
+  left: auto;
+  width: min(740px, calc(100vw - 2.5rem));
+  max-width: calc(100vw - 2.5rem);
   box-sizing: border-box;
   background: rgba(10, 16, 28, 0.96);
   backdrop-filter: blur(24px);
@@ -3729,7 +3730,8 @@ select {
 
 @media (max-width: 1150px) {
   .mega-dropdown-menu {
-    right: -40px;
+    right: -80px;
+    left: auto;
     width: min(640px, calc(100vw - 2rem));
     padding: 1.25rem;
   }
