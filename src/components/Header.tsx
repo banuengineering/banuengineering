@@ -142,24 +142,24 @@ export default function Header() {
                     </div>
                   </Link>
 
-                  {/* Category Card 3: Facades & Custom Interior */}
+                  {/* Category Card 3: Roofings & Structural Sheds */}
                   <Link href="/services/acp" className="mega-category-card" onClick={handleDropdownLinkClick}>
                     <div>
                       <div className="mega-card-header">
                         <div className="mega-card-title-row">
                           <span className="mega-card-badge">03</span>
-                          <h4 className="mega-card-title">Facades & Custom</h4>
+                          <h4 className="mega-card-title">Roofings & Sheds</h4>
                         </div>
                         <span className="mega-card-arrow">→</span>
                       </div>
                       <p className="mega-card-desc">
-                        ACP Elevation Cladding, JSW Roofing Sheds, Modular Kitchens & Loft Cupboards.
+                        Sloping Roofs, JSW Color Tile Roofings, Industrial Structural Sheds & Car Porches.
                       </p>
                     </div>
                     <div className="mega-card-tags">
-                      <span>ACP Cladding</span>
-                      <span>Roofing Sheds</span>
-                      <span>Modular</span>
+                      <span>Sloping Roofs</span>
+                      <span>JSW Tile Sheds</span>
+                      <span>Structural Trusses</span>
                     </div>
                   </Link>
 
@@ -216,7 +216,7 @@ export default function Header() {
                 textAlign: 'left'
               }}
             >
-              <span>Services (All 14 Capability Pages)</span>
+              <span>Services</span>
               <svg
                 viewBox="0 0 24 24"
                 width="16"
@@ -230,7 +230,7 @@ export default function Header() {
 
             {mobileServicesOpen && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '0.5rem', marginBottom: '0.5rem' }}>
-                
+
                 {/* Category Card 1: Stainless Steel Systems */}
                 <Link href="/services/stainless-steel" className="mega-category-card" onClick={() => setIsOpen(false)}>
                   <div className="mega-card-header">
@@ -259,17 +259,17 @@ export default function Header() {
                   </p>
                 </Link>
 
-                {/* Category Card 3: Facades & Custom Interior */}
+                {/* Category Card 3: Roofings & Structural Sheds */}
                 <Link href="/services/acp" className="mega-category-card" onClick={() => setIsOpen(false)}>
                   <div className="mega-card-header">
                     <div className="mega-card-title-row">
                       <span className="mega-card-badge">03</span>
-                      <h4 className="mega-card-title">Facades & Custom</h4>
+                      <h4 className="mega-card-title">Roofings & Sheds</h4>
                     </div>
                     <span className="mega-card-arrow">→</span>
                   </div>
                   <p className="mega-card-desc" style={{ fontSize: '0.75rem', margin: 0 }}>
-                    ACP Elevation Cladding, JSW Roofing Sheds, Modular Kitchens & Cupboards.
+                    Sloping Roofs, JSW Color Tile Roofings & Structural Industrial Sheds.
                   </p>
                 </Link>
 
@@ -280,7 +280,7 @@ export default function Header() {
             )}
           </div>
 
-          <Link href="/projects" className={`mobile-nav-link ${isLinkActive('/projects') ? 'active-link' : ''}`} onClick={() => setIsOpen(false)}>Projects Archive</Link>
+          <Link href="/projects" className={`mobile-nav-link ${isLinkActive('/projects') ? 'active-link' : ''}`} onClick={() => setIsOpen(false)}>Projects</Link>
           <Link href="/about" className={`mobile-nav-link ${isLinkActive('/about') ? 'active-link' : ''}`} onClick={() => setIsOpen(false)}>About Us</Link>
           <Link href="/contact" className={`mobile-nav-link ${isLinkActive('/contact') ? 'active-link' : ''}`} onClick={() => setIsOpen(false)}>Contact</Link>
 

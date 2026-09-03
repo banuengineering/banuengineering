@@ -58,7 +58,7 @@ export default function Footer() {
           <div className="footer-col">
             <h3 className="footer-h3">Office</h3>
             <p className="footer-desc footer-address">
-              Kullampatti, Alanthur, Nagamangalam, Manigandam, Madurai Main Road,<br />
+              Alanthur, Nagamangalam, Manigandam, Madurai Main Road,<br />
               opposite Nayara Petrol Bunk,<br />
               Trichy – 620012, Tamil Nadu.
             </p>

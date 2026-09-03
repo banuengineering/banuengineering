@@ -12,7 +12,7 @@ export default function ProjectsPage() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [activeService, setActiveService] = useState(0);
 
-  const categories = ["All", "Stainless Steel", "Toughened Glass", "ACP Elevation", "Structural Sheds", "Interior & Modular", "Custom Works"];
+  const categories = ["All", "Stainless Steel", "Toughened Glass", "Sloping Roofings", "Structural Sheds", "Interior & Modular", "Custom Works"];
 
   const servicesCatalog = [
     {
@@ -97,11 +97,11 @@ export default function ProjectsPage() {
     },
     {
       id: "11",
-      title: "ACP Elevation Cladding",
-      category: "ACP Elevation",
-      desc: "Aluminum Composite Panel (ACP) exterior cladding for commercial showroom facades, corporate towers, and modern building elevations.",
-      image: "/images/acp-elevation.png",
-      tags: ["Commercial Elevation", "PVDF Coating", "Weatherproof"]
+      title: "Sloping Metal Roofings",
+      category: "Sloping Roofings",
+      desc: "Architectural sloping roofs and modern steel truss roofing structures with JSW color-coated metal tile profile sheets.",
+      image: "/images/roofing.jpeg",
+      tags: ["Sloping Roofs", "JSW Color Tile", "Weatherproof Trusses"]
     },
     {
       id: "12",
@@ -109,23 +109,23 @@ export default function ProjectsPage() {
       category: "Interior & Modular",
       desc: "Stainless steel 304 termite-proof modular kitchen frameworks, heavy-duty wire basket supports, and metal storage cabinets.",
       image: "/images/welding-craft.png",
-      tags: ["SS 304 Framework", "Termite Proof", "Custom Drawers"]
+      tags: ["SS 304 Frame", "Termite Proof", "Custom Drawers"]
     },
     {
       id: "13",
       title: "Loft & Cupboard Works",
       category: "Interior & Modular",
-      desc: "Custom overhead metal loft structures, stainless steel storage cupboards, aluminum wardrobe partitioning, and utility shelving.",
+      desc: "Heavy-gauge metal framing for lofts, bedroom cupboards, and utility storage racks built for maximum load capacity.",
       image: "/images/welding-craft.png",
-      tags: ["Loft Framing", "Metal Storage", "Utility Shelving"]
+      tags: ["Loft Framing", "Metal Cupboards", "High Load Capacity"]
     },
     {
       id: "14",
       title: "Custom SS & Glass Works",
-      category: "Custom Works",
-      desc: "Tailor-made architectural metal & glass features, custom display structures, metal wall grilles, and specialized engineering items.",
+      category: "Custom Fabrication",
+      desc: "Bespoke architectural steel and glass installations tailored to specific engineering drawings and interior designer specs.",
       image: "/images/welding-craft.png",
-      tags: ["Bespoke Fabrication", "Custom Engineering", "Architectural Metal"]
+      tags: ["Bespoke Specs", "Architectural Joinery", "On-Demand Design"]
     }
   ];
 
@@ -133,7 +133,7 @@ export default function ProjectsPage() {
     {
       num: "01",
       title: "STAINLESS STEEL SYSTEMS",
-      tags: ["Handrails", "Spiral Steps", "Safety Gates (HPL CNC)", "SS Staircases"],
+      tags: ["SS Handrails", "Spiral Steps", "SS & Glass Staircases", "CNC Gates"],
       image: "/images/steel-staircase.png"
     },
     {
@@ -144,9 +144,9 @@ export default function ProjectsPage() {
     },
     {
       num: "03",
-      title: "FACADES & ROOFING SHEDS",
-      tags: ["ACP Elevation", "JSW Roofing Sheds", "UPVC", "Polycarbonate Sheets"],
-      image: "/images/acp-elevation.png"
+      title: "STRUCTURAL ROOFINGS",
+      tags: ["Sloping Roofs", "JSW Metal Tile", "UPVC", "Industrial Sheds"],
+      image: "/images/roofing.jpeg"
     },
     {
       num: "04",
@@ -169,8 +169,8 @@ export default function ProjectsPage() {
   };
 
   // Filter projects
-  const filteredProjects = filter === "All" 
-    ? galleryItems 
+  const filteredProjects = filter === "All"
+    ? galleryItems
     : galleryItems.filter(p => p.category === filter);
 
   // Pagination slice
@@ -208,7 +208,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="projects-page-wrapper">
-      
+
       {/* SERVICES INDEX */}
       <section className="section-padding container" style={{ paddingTop: '6rem', borderBottom: '1px solid var(--border-color)', marginBottom: '4rem' }} aria-label="Narrative: Outputs">
         <motion.div
@@ -273,8 +273,8 @@ export default function ProjectsPage() {
 
         <div className="brand-specs-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '2rem' }}>
           {servicesCatalog.map((item) => (
-            <motion.div 
-              key={item.id} 
+            <motion.div
+              key={item.id}
               className="brand-glass-card"
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3 }}
@@ -308,9 +308,9 @@ export default function ProjectsPage() {
               </div>
 
               <div>
-                <Link 
+                <Link
                   href={`/contact?service=${encodeURIComponent(item.title)}`}
-                  className="btn-primary" 
+                  className="btn-primary"
                   style={{ display: 'block', textAlign: 'center', width: '100%', padding: '0.8rem 1rem', fontSize: '0.85rem' }}
                 >
                   Request Quote for This Service →
@@ -334,7 +334,7 @@ export default function ProjectsPage() {
 
       {/* 02 — FILTER TABS & MOSAIC GALLERY */}
       <section className="container" style={{ paddingBottom: "10rem" }}>
-        
+
         {/* Category Filters */}
         <div className="filter-tabs-container">
           {categories.map((cat) => (
@@ -352,8 +352,8 @@ export default function ProjectsPage() {
         <div className="gallery-mosaic-grid" style={{ marginTop: "2rem" }}>
           <AnimatePresence mode="popLayout">
             {visibleProjects.map((project, idx) => (
-              <motion.div 
-                key={project.id} 
+              <motion.div
+                key={project.id}
                 className="portfolio-item"
                 layout
                 initial={{ opacity: 0, y: 30 }}
@@ -365,22 +365,22 @@ export default function ProjectsPage() {
                 <div className="portfolio-img-box">
                   {project.type === "video" ? (
                     <>
-                      <video 
-                        src={project.src} 
-                        preload="metadata" 
-                        muted 
+                      <video
+                        src={encodeURI(project.src)}
+                        preload="metadata"
+                        muted
                         playsInline
                       />
                       <div className="gallery-play-icon">
                         <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                          <path d="M8 5v14l11-7z"/>
+                          <path d="M8 5v14l11-7z" />
                         </svg>
                       </div>
                     </>
                   ) : (
-                    <img 
-                      src={project.src} 
-                      alt={project.title} 
+                    <img
+                      src={encodeURI(project.src)}
+                      alt={project.title}
                       loading="lazy"
                     />
                   )}
@@ -406,7 +406,7 @@ export default function ProjectsPage() {
       {/* 03 — LIGHTBOX MODAL OVERLAY */}
       <AnimatePresence>
         {activeProject && (
-          <motion.div 
+          <motion.div
             className="gallery-modal-overlay"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -414,8 +414,8 @@ export default function ProjectsPage() {
             onClick={() => setLightboxIndex(null)}
           >
             {/* Close button */}
-            <button 
-              className="gallery-modal-close-btn" 
+            <button
+              className="gallery-modal-close-btn"
               onClick={() => setLightboxIndex(null)}
               aria-label="Close lightbox"
             >
@@ -426,7 +426,7 @@ export default function ProjectsPage() {
             </button>
 
             {/* Modal Box */}
-            <motion.div 
+            <motion.div
               className="gallery-modal-container"
               initial={{ scale: 0.9, y: 20 }}
               animate={{ scale: 1, y: 0 }}
@@ -434,21 +434,21 @@ export default function ProjectsPage() {
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
               onClick={(e) => e.stopPropagation()}
             >
-              
+
               {/* Media Column */}
               <div className="gallery-modal-media-pane">
                 {activeProject.type === "video" ? (
-                  <video 
-                    src={activeProject.src} 
-                    controls 
-                    autoPlay 
-                    loop 
+                  <video
+                    src={encodeURI(activeProject.src)}
+                    controls
+                    autoPlay
+                    loop
                     style={{ width: "100%", height: "100%", objectFit: "contain" }}
                   />
                 ) : (
-                  <img 
-                    src={activeProject.src} 
-                    alt={activeProject.title} 
+                  <img
+                    src={encodeURI(activeProject.src)}
+                    alt={activeProject.title}
                   />
                 )}
               </div>
@@ -480,13 +480,13 @@ export default function ProjectsPage() {
 
                 {/* Lightbox Navigation */}
                 <div className="gallery-modal-nav-bar">
-                  <button 
+                  <button
                     className="gallery-modal-nav-btn"
                     onClick={() => setLightboxIndex(prev => (prev! - 1 + filteredProjects.length) % filteredProjects.length)}
                   >
                     ← Prev
                   </button>
-                  <button 
+                  <button
                     className="gallery-modal-nav-btn"
                     onClick={() => setLightboxIndex(prev => (prev! + 1) % filteredProjects.length)}
                   >

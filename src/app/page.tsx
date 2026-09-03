@@ -27,9 +27,9 @@ export default function Home() {
       image: "/images/glass-railing.png"
     },
     {
-      title: "ACP",
-      desc: "Flat geometric panels of composite aluminum fabricated on sub-frames to create clean, weather-sealed commercial facades and elevations.",
-      image: "/images/acp-elevation.png"
+      title: "ROOFINGS",
+      desc: "Sloping metal roofings and structural steel trusses fabricated with JSW color-coated tile sheets, UPVC panels, and weatherproof insulation.",
+      image: "/images/roofing.jpeg"
     }
   ];
 
@@ -44,15 +44,15 @@ export default function Home() {
     {
       image: "/images/glass-railing.png",
       title: "Frameless Spigot Glass Balcony",
-      location: "Taila Silks, Trichy",
+      location: "Thaila Silks, Trichy",
       desc: "Saint-Gobain laminated safety glass sheets anchored with custom floor-mounted spigots.",
       layout: "col-4"
     },
     {
       image: "/images/acp-elevation.png",
-      title: "Geometric Facade Cladding",
+      title: "ACP Elevation Cladding System",
       location: "Dov Chem, Trichy",
-      desc: "Flat-panel exterior cladding featuring weather-sealed expansion joints and steel subframe backing.",
+      desc: "Custom-fabricated Aluminium Composite Panel (ACP) facade system with concealed framing and expansion joints for commercial buildings.",
       layout: "col-12"
     }
   ];
@@ -112,7 +112,7 @@ export default function Home() {
           <motion.div className="bento-cell bento-text-card" variants={itemVariants}>
             <div className="bento-logo-block">
               <span className="eyebrow" style={{ color: 'var(--accent-brand)', fontWeight: '800', marginBottom: '0.25rem' }}>Est. 2015 / Trichy</span>
-              <span className="text-meta">Stainless Steel · Glass · ACP</span>
+              <span className="text-meta">Stainless Steel · Glass · Roofings</span>
             </div>
 
             <div className="bento-title-block">
@@ -132,11 +132,11 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* Bento Cell 2: Primary Facade Image */}
+          {/* Bento Cell 2: Primary Roofing & Steel Image */}
           <motion.div className="bento-cell bento-image-large" variants={itemVariants}>
             <Image
               src="/images/hero-facade.png"
-              alt="High-end structural steel and glass facade by Banu Engineering"
+              alt="High-end structural steel, glass, and roofing structures by Banu Engineering"
               fill
               sizes="(max-width: 950px) 100vw, 50vw"
               priority
@@ -331,12 +331,13 @@ export default function Home() {
               </div>
 
               <p className="cert-desc">
-                Comprehensive Ultrasonic (UT), Liquid Penetrant (PT), and Visual (VT) testing certified under ASNT NDT Level II standards.
+                Comprehensive Radiographic (RT), Magnetic Particle (MT), Ultrasonic (UT), Liquid Penetrant (PT), and Visual (VT) testing certified under ASNT NDT Level II standards.
               </p>
 
               <div className="cert-pill-list">
+                <span className="cert-pill">Radiographic Testing (RT)</span>
+                <span className="cert-pill">Magnetic Particle (MT)</span>
                 <span className="cert-pill">Ultrasonic Testing (UT)</span>
-                <span className="cert-pill">Zero Micro-Voids</span>
                 <span className="cert-pill">ASNT Level II Qualified</span>
               </div>
             </div>
@@ -415,7 +416,7 @@ export default function Home() {
           <motion.div className="experience-stat-cell" variants={itemVariants}>
             <span className="experience-stat-huge">10+</span>
             <span className="experience-stat-label">Cities Served</span>
-            <p className="experience-stat-paragraph">Providing structural installations and cladding solutions across Tamil Nadu.</p>
+            <p className="experience-stat-paragraph">Providing structural installations and roofing solutions across Tamil Nadu.</p>
           </motion.div>
         </motion.div>
       </section>
@@ -652,7 +653,7 @@ export default function Home() {
             <div className="contact-meta-group">
               <span className="contact-meta-label">Office Address</span>
               <p className="contact-meta-paragraph">
-                Kullampatti, Alanthur, Nagamangalam, Manigandam, Madurai Main Road, opposite Nayara Petrol Bunk, Trichy – 620012.
+                Alanthur, Nagamangalam, Manigandam, Madurai Main Road, opposite Nayara Petrol Bunk, Trichy – 620012.
               </p>
             </div>
           </motion.div>

@@ -92,7 +92,7 @@ export default function QuoteForm() {
         </div>
         <h3 className="success-title">Submission Successful</h3>
         <p className="success-msg">
-          Thank you, <strong>{formData.name}</strong>. Your project specifications have been submitted successfully. Our estimating team will contact you shortly.
+          Thank you, <strong>{formData.name}</strong>. Your project specifications have been submitted successfully. Our marketing team will contact you shortly.
         </p>
         <div className="whatsapp-prompt">
           <p className="prompt-text">Send details directly via WhatsApp for a faster response.</p>
@@ -213,15 +213,15 @@ export default function QuoteForm() {
               <option value="Shower Enclosures">Shower Enclosures</option>
               <option value="Terracotta Jally with Tough glass">Terracotta Jally with Toughened Glass</option>
             </optgroup>
-            <optgroup label="Facades & Structural Sheds">
-              <option value="ACP Elevation">ACP Elevation Cladding</option>
+            <optgroup label="Roofings & Structural Sheds">
+              <option value="Sloping Metal Roofings">Sloping Metal Roofings</option>
               <option value="Roofing Shed (JSW Metal, UPVC, Polycarbonate)">Roofing Shed (JSW Metal, UPVC, Polycarbonate)</option>
             </optgroup>
             <optgroup label="Interior & Custom Works">
               <option value="Modular Kitchen">Modular Kitchen</option>
               <option value="Lopt & Cupboard works">Loft & Cupboard Works</option>
               <option value="Custom SS & Glass Works">Custom SS & Glass Works</option>
-              <option value="Combined Work">Combined Steel + Glass + ACP</option>
+              <option value="Combined Work">Combined Steel + Glass + Roofings</option>
               <option value="Other">Other (Specify below)</option>
             </optgroup>
           </select>

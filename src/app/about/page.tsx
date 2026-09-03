@@ -21,7 +21,7 @@ export default function AboutPage() {
       author: "Managing Director"
     },
     {
-      name: "Taila Silks",
+      name: "Thaila Silks",
       location: "Trichy",
       logo: "/images/clients/taila.png",
       quote: "Their frameless spigot glass balcony railings and architectural glazed facades transformed our showroom frontage. Clean execution and finished on schedule.",
@@ -40,6 +40,27 @@ export default function AboutPage() {
       logo: "/images/clients/rane.png",
       quote: "Heavy-duty steel structural platforms and handrails fabricated to international engineering standards. Zero weld defects and high load capacities.",
       author: "Plant Manager"
+    },
+    {
+      name: "Silverline",
+      location: "Trichy",
+      logo: "/images/clients/silverline.jpg",
+      quote: "Outstanding precision in structural fabrication and customized metal engineering. Delivered with exceptional quality, structural strength, and attention to detail.",
+      author: "Project Head"
+    },
+    {
+      name: "ITC",
+      location: "Trichy",
+      logo: "/images/clients/itc.png",
+      quote: "Reliable industrial structural steel and safety handrail installations. High standards of safety compliance, durability, and on-time completion.",
+      author: "Plant Manager"
+    },
+    {
+      name: "Shubam Transport",
+      location: "Trichy",
+      logo: "/images/clients/shubam.jpg",
+      quote: "Heavy-duty structural roofing sheds and steel framework engineered for maximum durability, structural stability, and weatherproof protection.",
+      author: "Logistics Manager"
     }
   ];
 
@@ -299,9 +320,9 @@ export default function AboutPage() {
               { city: "Theni", note: "Structural Sheds & Fabrications" },
               { city: "All Tamil Nadu", note: "On-Site Execution Support" }
             ].map((item) => (
-              <div 
-                key={item.city} 
-                className="brand-glass-card" 
+              <div
+                key={item.city}
+                className="brand-glass-card"
                 style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
               >
                 <span style={{ fontSize: '1.15rem', fontWeight: '800', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>
