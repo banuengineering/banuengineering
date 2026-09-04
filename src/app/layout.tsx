@@ -62,10 +62,18 @@ export const metadata: Metadata = {
     siteName: "Banu Engineering Trichy",
     images: [
       {
-        url: "/images/hero-facade.png",
+        url: "https://banuengineering.com/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Banu Engineering Logo",
+        type: "image/png",
+      },
+      {
+        url: "https://banuengineering.com/images/hero-facade.png",
         width: 1200,
         height: 630,
         alt: "Banu Engineering Architectural Fabrication Trichy",
+        type: "image/png",
       },
     ],
     locale: "en_IN",
@@ -75,10 +83,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Banu Engineering | SS & Glass Fabrication Works Trichy",
     description: "Top architectural metal, glass railing, and sloping roofing contractor in Trichy, Tamil Nadu.",
-    images: ["/images/hero-facade.png"],
+    images: ["https://banuengineering.com/images/logo.png"],
   },
   icons: {
-    icon: "/images/logo.png",
+    icon: [
+      { url: "/images/logo.png", type: "image/png" },
+    ],
     shortcut: "/images/logo.png",
     apple: "/images/logo.png",
   },

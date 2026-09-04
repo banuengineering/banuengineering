@@ -10,6 +10,20 @@ export const metadata: Metadata = {
     title: "About Banu Engineering | History, Certifications & Reputation",
     description: "Certified NDT Level II weld inspection, Jindal SS 304/316 steel, Saint-Gobain glass, and JSW roofing execution across Tamil Nadu.",
     url: "https://banuengineering.com/about",
+    images: [
+      {
+        url: "https://banuengineering.com/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Banu Engineering Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Banu Engineering | History, Certifications & Reputation",
+    description: "Certified NDT Level II weld inspection, Jindal SS 304/316 steel, Saint-Gobain glass, and JSW roofing execution across Tamil Nadu.",
+    images: ["https://banuengineering.com/images/logo.png"],
   },
 };
 

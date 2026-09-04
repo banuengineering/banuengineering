@@ -10,6 +10,20 @@ export const metadata: Metadata = {
     title: "Completed Projects Gallery | Banu Engineering Trichy",
     description: "High-resolution portfolio of architectural steel, glass, and roofing installations in Trichy, Madurai, Tanjore, and Pudukkottai.",
     url: "https://banuengineering.com/projects",
+    images: [
+      {
+        url: "https://banuengineering.com/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Banu Engineering Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Completed Projects Gallery | Banu Engineering Trichy",
+    description: "High-resolution portfolio of architectural steel, glass, and roofing installations in Trichy, Madurai, Tanjore, and Pudukkottai.",
+    images: ["https://banuengineering.com/images/logo.png"],
   },
 };
 

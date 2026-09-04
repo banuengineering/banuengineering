@@ -10,6 +10,20 @@ export const metadata: Metadata = {
     title: "Contact Banu Engineering Trichy | Fabrication Quotations",
     description: "Submit project blueprints or request site measurement visits for SS handrails, glass railings, and roofing sheds across Tamil Nadu.",
     url: "https://banuengineering.com/contact",
+    images: [
+      {
+        url: "https://banuengineering.com/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Banu Engineering Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Banu Engineering Trichy | Fabrication Quotations",
+    description: "Submit project blueprints or request site measurement visits for SS handrails, glass railings, and roofing sheds across Tamil Nadu.",
+    images: ["https://banuengineering.com/images/logo.png"],
   },
 };
 

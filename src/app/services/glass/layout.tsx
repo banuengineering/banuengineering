@@ -18,6 +18,20 @@ export const metadata: Metadata = {
     title: "Toughened Glass Railings & Spider Facades | Banu Engineering Trichy",
     description: "Saint-Gobain glass railings, spigot glass balconies, spider glazing facades, and custom shower enclosures in Trichy & Tamil Nadu.",
     url: "https://banuengineering.com/services/glass",
+    images: [
+      {
+        url: "https://banuengineering.com/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Banu Engineering Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Toughened Glass Railings & Spider Facades | Banu Engineering Trichy",
+    description: "Saint-Gobain glass railings, spigot glass balconies, spider glazing facades, and custom shower enclosures in Trichy & Tamil Nadu.",
+    images: ["https://banuengineering.com/images/logo.png"],
   },
 };
 

@@ -18,6 +18,20 @@ export const metadata: Metadata = {
     title: "Stainless Steel Handrail & Staircase Works | Banu Engineering Trichy",
     description: "Rust-free Jindal grade SS 304/316 handrails, spiral staircases, and custom gate fabrications in Trichy & Tamil Nadu.",
     url: "https://banuengineering.com/services/stainless-steel",
+    images: [
+      {
+        url: "https://banuengineering.com/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Banu Engineering Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Stainless Steel Handrail & Staircase Works | Banu Engineering Trichy",
+    description: "Rust-free Jindal grade SS 304/316 handrails, spiral staircases, and custom gate fabrications in Trichy & Tamil Nadu.",
+    images: ["https://banuengineering.com/images/logo.png"],
   },
 };
 

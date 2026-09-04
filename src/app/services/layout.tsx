@@ -10,6 +10,20 @@ export const metadata: Metadata = {
     title: "14 Fabrication & Architectural Services | Banu Engineering Trichy",
     description: "Full capability matrix of certified stainless steel handrails, toughened glass works, and sloping metal roofings in Trichy & Tamil Nadu.",
     url: "https://banuengineering.com/services",
+    images: [
+      {
+        url: "https://banuengineering.com/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Banu Engineering Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "14 Fabrication & Architectural Services | Banu Engineering Trichy",
+    description: "Full capability matrix of certified stainless steel handrails, toughened glass works, and sloping metal roofings in Trichy & Tamil Nadu.",
+    images: ["https://banuengineering.com/images/logo.png"],
   },
 };
 

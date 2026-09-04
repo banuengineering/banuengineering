@@ -18,6 +18,20 @@ export const metadata: Metadata = {
     title: "Sloping Metal Roofings & JSW Roofing Sheds | Banu Engineering Trichy",
     description: "Sloping steel truss roofing sheds, JSW color tile profile roofs, UPVC panels, and ACP facade elevations in Trichy & Tamil Nadu.",
     url: "https://banuengineering.com/services/acp",
+    images: [
+      {
+        url: "https://banuengineering.com/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Banu Engineering Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sloping Metal Roofings & JSW Roofing Sheds | Banu Engineering Trichy",
+    description: "Sloping steel truss roofing sheds, JSW color tile profile roofs, UPVC panels, and ACP facade elevations in Trichy & Tamil Nadu.",
+    images: ["https://banuengineering.com/images/logo.png"],
   },
 };
 
