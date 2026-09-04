@@ -10,7 +10,7 @@ export default function ProjectsPage() {
   const [filter, setFilter] = useState("All");
   const [itemsToShow, setItemsToShow] = useState(12);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-  const categories = ["All", "Stainless Steel", "Toughened Glass", "Sloping Roofings", "Structural Sheds", "Interior & Modular", "Custom Works"];
+  const categories = ["All", "Stainless Steel", "Toughened Glass", "Sloping Roofings", "Custom Works"];
 
   // Filter projects
   const filteredProjects = filter === "All"
